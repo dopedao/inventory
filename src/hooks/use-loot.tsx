@@ -1,20 +1,21 @@
 import { useState, useEffect } from "react";
 import { request, gql } from 'graphql-request'
 
-const SUBGRAPH = 'https://api.thegraph.com/subgraphs/name/shahruz/loot'
+const SUBGRAPH = 'https://api.studio.thegraph.com/query/7708/gear/v0.0.1'
 
 const bagsQuery = gql`
   {
     bags(first: 10, orderBy: minted, orderDirection: asc) {
       id
-      head
       neck
-      chest
+      clothes
       hand
       ring
       weapon
       waist
       foot
+      drugs
+      vehicle
       currentOwner {
         address
         bagsHeld

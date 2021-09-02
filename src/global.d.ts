@@ -1,45 +1,45 @@
 type Rarity = 1 | 2 | 3 | 4 | 5 | 6;
 
 type Bag = {
-  id: String
-  minted: String
+  id: string
+  minted: string
   currentOwner: Wallet
-  weapon: String
-  chest: String
-  head: String
-  waist: String
-  foot: String
-  hand: String
-  neck: String
-  ring: String
+  weapon: string
+  chest: string
+  head: string
+  waist: string
+  foot: string
+  hand: string
+  neck: string
+  ring: string
   items: Item[]
 }
 
 type ItemSlots = {
-  weapon: String
-  chest: String
-  head: String
-  waist: String
-  foot: String
-  hand: String
-  neck: String
-  ring: String
+  weapon: string
+  chest: string
+  head: string
+  waist: string
+  foot: string
+  hand: string
+  neck: string
+  ring: string
 }
 
 type Item = {
-  slot: String
-  name: String
-  item: String
-  suffix?: String
-  namePrefix?: String
-  nameSuffix?: String
+  slot: string
+  name: string
+  item: string
+  suffix?: string
+  namePrefix?: string
+  nameSuffix?: string
   bonus: Boolean
   rarity: Rarity
 }
 
 type Wallet = {
-  id: String
-  address: String
+  id: string
+  address: string
   bags: [Bag]
   bagsHeld: BigInt
   joined: BigInt
@@ -50,6 +50,6 @@ type Transfer = {
   bag: Bag!
   from: Wallet!
   to: Wallet!
-  txHash: String!
+  txHash: string!
   timestamp: BigInt!
 }

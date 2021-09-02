@@ -6,9 +6,9 @@ import {
   namePrefixes,
   nameSuffixes,
 } from "../helpers/item";
-import { itemRarity } from "loot-rarity";
+import { itemRarity } from "gear-rarity";
 
-const SUBGRAPH = "https://api.thegraph.com/subgraphs/name/shahruz/loot";
+const SUBGRAPH = "https://api.studio.thegraph.com/query/7708/gear/v0.0.1";
 
 const walletQuery = gql`
   query Wallet($id: String!) {
@@ -21,8 +21,9 @@ const walletQuery = gql`
         id
         minted
         weapon
-        chest
-        head
+        clothes
+        drugs
+        vehicle
         waist
         foot
         hand
@@ -79,8 +80,9 @@ function useWallet(address: string): WalletQuery {
 
 const itemKeys = [
   "weapon",
-  "chest",
-  "head",
+  "clothes",
+  "drugs",
+  "vehicle",
   "waist",
   "foot",
   "hand",

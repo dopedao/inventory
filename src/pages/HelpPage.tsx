@@ -92,7 +92,7 @@ function HelpPage() {
       <ul>
         <li>
           <a
-            href="https://github.com/scotato/inventory"
+            href="https://github.com/dopedao/inventory"
             style={style.link}
             target="_blank"
             rel="noreferrer"
@@ -102,7 +102,7 @@ function HelpPage() {
         </li>
         <li>
           <a
-            href="https://github.com/bpierre/loot-rarity"
+            href="https://github.com/dopedao/gear-rarity"
             style={style.link}
             target="_blank"
             rel="noreferrer"
@@ -112,7 +112,7 @@ function HelpPage() {
         </li>
         <li>
           <a
-            href="https://github.com/Anish-Agnihotri/dhof-loot/"
+            href="https://github.com/dopedao/dhof-loot/"
             style={style.link}
             target="_blank"
             rel="noreferrer"
@@ -165,7 +165,7 @@ function HelpPage() {
         </li>
         <li>
           <a
-            href="https://github.com/shahruz/loot-subgraph"
+            href="https://github.com/dopedao/subgraph"
             style={style.link}
             target="_blank"
             rel="noreferrer"

@@ -1,6 +1,6 @@
 # Inventory
 
-View the [Loot](https://opensea.io/collection/loot-rng) in your inventory.
+View the [DopeWars Loot](https://t.co/woGOEaSTLp?amp=1) in your inventory.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c315be9-f0e9-49d3-880f-44439d1df588/deploy-status)](https://app.netlify.com/sites/0xinventory/deploys)
 

@@ -4,7 +4,7 @@ import Bag from "../components/Bag";
 import ShareAdventurer from "../components/ShareAdventurer";
 import useWallet from "../hooks/use-wallet";
 
-const DEMO_ADDRESS = "0xC6c41119Af1e0840357245c66baAf0e21B694D4d";
+const DEMO_ADDRESS = "0xbdc48feac848d0d1d3714ef61dc3e15637248a40";
 
 const style = {
   page: {
