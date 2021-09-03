@@ -5258,10 +5258,10 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.npmjs.org/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-gear-rarity@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gear-rarity/-/gear-rarity-1.0.1.tgz#8d828de61241daf661e1236c9d8e8dbca74d4e12"
-  integrity sha512-ms/PNqdWb37ZjRPEMDqL5lpqWh6dv+aLISt4wPLcetSWFXkOokac7O2uZR6pWhDVBfYJXJDZVMo9JSrcI9DSzA==
+gear-rarity@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gear-rarity/-/gear-rarity-1.0.2.tgz#847cb968aea4b356e100e4c1362bc8c97e9826b1"
+  integrity sha512-YxXKL/8+3HCcLNVRAEE5dbkjXmvBA3YSejYiafzbuZUyhDRgb1Nj6Ed4dxzQn/es7YVPfbVocaQbJWfoUwGCBw==
   dependencies:
     isomorphic-fetch "^3.0.0"
     shorthash2 "^1.0.3"
