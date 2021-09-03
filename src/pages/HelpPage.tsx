@@ -155,7 +155,7 @@ function HelpPage() {
         </li>
         <li>
           <a
-            href="https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7"
+            href="https://etherscan.io/address/0x8707276df042e89669d69a177d3da7dc78bd8723"
             style={style.link}
             target="_blank"
             rel="noreferrer"
