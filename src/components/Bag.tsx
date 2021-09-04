@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 import useMeasure from "use-measure";
 import { rarityImageFromItems } from "gear-rarity";
 import rarities from "../data/rare.json";
@@ -42,7 +42,20 @@ function Bag({ bag }: BagProps) {
   const scores = rarities.find((loot) => loot.lootId === Number(bag.id));
   const itemScore = bag.items.reduce((score, item) => item.rarity + score, 0);
 
-  console.log(bag.items)
+  const [audio, setAudio] = useState<HTMLAudioElement[]>([]);
+
+  const addie = useCallback((a: HTMLAudioElement) => {
+    setAudio((prev) => [...prev, a]);
+  }, [setAudio]);
+
+  const weed = useCallback((w: HTMLAudioElement) => {
+    setAudio((prev) => [...prev, w]);
+  }, [setAudio]);
+
+  const play = useCallback(() => {
+    audio.forEach((a) => a.play());
+  }, [audio]);
+
   return (
     <div style={style.container} className="bag-container">
       <div style={{ ...style.bag, height: width }} ref={ref} className="bag">
@@ -72,6 +85,9 @@ function Bag({ bag }: BagProps) {
         {/* <p style={style.score}>Rank: {scores?.rarest}</p>
         <p style={style.score}>Top: {getRarityPercentage(scores?.rarest)}%</p>
         <p style={style.score}>Item Score: {itemScore}</p> */}
+        <audio ref={addie} src="https://storage.googleapis.com/lootfm-test/drugs/adderall.mp3" />
+        <audio ref={weed} src="https://storage.googleapis.com/lootfm-test/drugs/weed.mp3" />
+        <button onClick={play}>Play</button>
       </div>
     </div>
   );
