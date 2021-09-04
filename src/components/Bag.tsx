@@ -69,21 +69,21 @@ function Bag({ bag }: BagProps) {
         >
           #{bag.id}
         </a>
-        {/* <p style={style.score}>Rank: {scores?.rarest}</p>
+        <p style={style.score}>Rank: {scores?.rarest}</p>
         <p style={style.score}>Top: {getRarityPercentage(scores?.rarest)}%</p>
-        <p style={style.score}>Item Score: {itemScore}</p> */}
+        <p style={style.score}>Item Score: {itemScore}</p>
       </div>
     </div>
   );
 }
 
 // show 2 decimals for top 0%
-// function getRarityPercentage(rank = 8000) {
-//   const percentage = (rank / 8000) * 100;
-//   const percentageRounded = percentage.toFixed(0);
-//   if (Number(percentageRounded)) return percentageRounded;
-//   return percentage.toFixed(2);
-// }
+function getRarityPercentage(rank = 8000) {
+  const percentage = (rank / 8000) * 100;
+  const percentageRounded = percentage.toFixed(0);
+  if (Number(percentageRounded)) return percentageRounded;
+  return percentage.toFixed(2);
+}
 
 const slotOrder = [
   "clothes",

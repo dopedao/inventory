@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #1C1C1C;
+  background: hsl(0deg 0% 10%);
   color: white;
   min-height: 100%;
   font-size: 20px;
