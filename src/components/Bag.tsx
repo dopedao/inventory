@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import useMeasure from "use-measure";
-import { rarityImageFromItems } from "gear-rarity";
-import rarities from "../data/rare.json";
+import { rarityImageFromItems } from "dope-rarity";
+import rarities from "dope-metrics/output/rare.json";
 import { colors } from "../helpers/theme";
 import Item from "./Item";
 
@@ -42,7 +42,6 @@ function Bag({ bag }: BagProps) {
   const scores = rarities.find((loot) => loot.lootId === Number(bag.id));
   const itemScore = bag.items.reduce((score, item) => item.rarity + score, 0);
 
-  console.log(bag.items)
   return (
     <div style={style.container} className="bag-container">
       <div style={{ ...style.bag, height: width }} ref={ref} className="bag">

@@ -1,4 +1,4 @@
-import parts from "../data/item-parts.json";
+import parts from "dope-metrics/output/item-parts.json";
 export const { suffixes, namePrefixes, nameSuffixes } = parts;
 
 export function parseItemParts(item) {
@@ -21,10 +21,12 @@ export function findItemType(item) {
   const hasPart = (part) => item.includes(part);
   const weapon = parts.weapons.filter(hasPart)[0];
   if (weapon) return weapon;
-  const chest = parts.chestArmor.filter(hasPart)[0];
-  if (chest) return chest;
-  const head = parts.headArmor.filter(hasPart)[0];
-  if (head) return head;
+  const clothes = parts.clothes.filter(hasPart)[0];
+  if (clothes) return clothes;
+  const drugs = parts.drugs.filter(hasPart)[0];
+  if (drugs) return drugs;
+  const vehicle  = parts.vehicle.filter(hasPart)[0];
+  if (vehicle ) return vehicle ;
   const waist = parts.waistArmor.filter(hasPart)[0];
   if (waist) return waist;
   const foot = parts.footArmor.filter(hasPart)[0];
