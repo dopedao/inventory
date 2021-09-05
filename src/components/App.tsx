@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/help">
             <HelpPage />
           </Route>
-          <Route path={`/adventurer/:address`}>
+          <Route path={`/gangsta/:address`}>
             <WalletPage />
           </Route>
         </Switch>

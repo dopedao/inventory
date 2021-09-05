@@ -6,7 +6,7 @@ import { colors } from "../helpers/theme";
 import Item from "./Item";
 
 const ENDPOINT =
-  "https://opensea.io/assets/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7/";
+  "https://opensea.io/assets/0x8707276df042e89669d69a177d3da7dc78bd8723/";
 interface BagProps {
   bag: Bag;
 }

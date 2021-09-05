@@ -3,7 +3,7 @@ import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { colors } from "../helpers/theme";
 
-const URL = "https://inventory.dopedao.org/adventurer";
+const URL = "https://inventory.dopedao.org/gangsta";
 
 const style = {
   button: {
