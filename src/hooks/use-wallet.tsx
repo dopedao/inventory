@@ -8,7 +8,7 @@ import {
 } from "../helpers/item";
 import { itemRarity } from "dope-rarity";
 
-const SUBGRAPH = "https://api.studio.thegraph.com/query/7708/gear/v0.0.1";
+const SUBGRAPH = "https://api.studio.thegraph.com/query/7708/dope-wars/v0.0.7";
 
 const walletQuery = gql`
   query Wallet($id: String!) {

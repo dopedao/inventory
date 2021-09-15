@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { request, gql } from 'graphql-request'
 
-const SUBGRAPH = 'https://api.studio.thegraph.com/query/7708/gear/v0.0.1'
+const SUBGRAPH = 'https://api.studio.thegraph.com/query/7708/dope-wars/v0.0.7'
 
 const bagsQuery = gql`
   {
